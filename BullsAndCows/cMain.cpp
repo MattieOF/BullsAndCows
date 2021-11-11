@@ -81,6 +81,14 @@ cMain::~cMain()
 {
 }
 
+void cMain::SetGameMode(GameMode gameMode)
+{
+	m_CurrentMode = gameMode;
+	m_GuessInput->Clear();
+
+	wxMessageBox(GameModeToCStr(m_CurrentMode));
+}
+
 void cMain::OnExitButtonClicked(wxCommandEvent& evt)
 {
 	this->Close();
@@ -97,6 +105,7 @@ void cMain::OnSetModeMenuClicked(wxCommandEvent& evt)
 {
 	cSetMode* setMode = new cSetMode(this);
 	setMode->Show();
+	evt.Skip();
 }
 
 void cMain::OnAboutMenuClicked(wxCommandEvent& evt)
@@ -114,4 +123,17 @@ void cMain::OnHowToPlayMenuClicked(wxCommandEvent& evt)
 void cMain::NewGame()
 {
 	wxMessageBox("New game clicked");
+}
+
+const char* cMain::GameModeToCStr(const GameMode& gameMode)
+{
+	switch (gameMode)
+	{
+	case GameMode::GAMEMODE_NUMBER:
+		return "Number";
+	case GameMode::GAMEMODE_WORD:
+		return "Word";
+	default:
+		return "Invalid";
+	}
 }
