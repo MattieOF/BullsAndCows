@@ -11,6 +11,7 @@ public:
 public:
 	void OnExitButtonClicked(wxCommandEvent& evt);
 	void OnNewGameMenuClicked(wxCommandEvent& evt);
+	void OnSetModeMenuClicked(wxCommandEvent& evt);
 	void OnAboutMenuClicked(wxCommandEvent& evt);
 	void OnHowToPlayMenuClicked(wxCommandEvent& evt);
 	void NewGame();
