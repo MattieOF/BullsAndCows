@@ -25,8 +25,12 @@ public:
 	void OnHowToPlayMenuClicked(wxCommandEvent& evt);
 	void OnShowCurrentValueMenuClicked(wxCommandEvent& evt);
 	void OnRegenerateValueMenuClicked(wxCommandEvent& evt);
+	void OnCustomWordsFileMenuClicked(wxCommandEvent& evt);
+	void OnGuessInputSubmitted(wxCommandEvent& evt);
 	void NewGame();
 	void CheckGuess();
+	void AddResult(int bulls, int cows);
+	void GameWon();
 
 	const char* GameModeToCStr(const GameMode& gameMode);
 

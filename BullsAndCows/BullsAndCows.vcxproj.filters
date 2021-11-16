@@ -24,6 +24,12 @@
     <ClInclude Include="cSetMode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="cAbout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cApp.cpp">
@@ -33,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cSetMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cAbout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cHelp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

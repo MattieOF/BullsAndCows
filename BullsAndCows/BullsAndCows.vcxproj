@@ -147,12 +147,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="cAbout.h" />
     <ClInclude Include="cApp.h" />
+    <ClInclude Include="cHelp.h" />
     <ClInclude Include="cMain.h" />
     <ClInclude Include="cSetMode.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cAbout.cpp" />
     <ClCompile Include="cApp.cpp" />
+    <ClCompile Include="cHelp.cpp" />
     <ClCompile Include="cMain.cpp" />
     <ClCompile Include="cSetMode.cpp" />
   </ItemGroup>
